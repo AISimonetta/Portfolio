@@ -1,12 +1,14 @@
 @use "./variables" as *;
 
-.footer {
-  background-color: $primary-color;
-  padding: 20px 100px;
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 375px){
+  .footer {
+    background-color: $primary-color;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
 
-  &__icons {
-    width: 40px;
+    &__icons {
+      width: 40px;
+    }
   }
 }

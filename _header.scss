@@ -1,22 +1,23 @@
 @use "./variables" as *;
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+@media screen and (min-width: 375px){
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
-  &__title {
-    font-family: $font-title;
-    font-size: 80px;
-    font-weight: lighter;
-    margin-top:60px;
-    margin-bottom: 40px;
+    &__title {
+      font-family: $font-title;
+      font-size: 80px;
+      font-weight: lighter;
+      margin-top:60px;
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      margin-top:40px;
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
   }
-
-  &__description {
-    margin-top:40px;
-    margin-bottom: 40px;
-    font-size: 16px;
-  }
-
 }
