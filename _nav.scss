@@ -9,6 +9,10 @@
     font-family: $font-title;
     font-size: 24px;
   }
+
+  &__div--links {
+    visibility: hidden;
+  }
 }
 
 // visibility: hidden

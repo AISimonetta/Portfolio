@@ -1,3 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.header__title {
+  font-family: "Cormorant", serif;
+  font-size: 80px;
+  font-weight: lighter;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.header__description {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -6,6 +24,9 @@
 .navbar__title {
   font-family: "Cormorant", serif;
   font-size: 24px;
+}
+.navbar__div--links {
+  visibility: hidden;
 }
 
 * {
