@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .footer {
     background-color: black;
     padding: 20px 100px;
@@ -9,7 +9,7 @@
     width: 40px;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     font-size: 16px;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -100,11 +100,31 @@
   }
   .navbar__title {
     font-family: "Cormorant", serif;
-    font-size: 24px;
+    font-size: 48px;
     margin-top: 5px;
   }
   .navbar__div--links {
-    visibility: hidden;
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .navbar__title {
+    font-family: "Cormorant", serif;
+    font-size: 48px;
+  }
+  .navbar__div--links {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-left: 40px;
   }
 }
 * {
@@ -118,6 +138,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.wholePage {
-  margin: 20px 20px;
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .wholePage {
+    margin: 20px 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wholePage {
+    margin: 40px 80px;
+  }
 }/*# sourceMappingURL=main.css.map */

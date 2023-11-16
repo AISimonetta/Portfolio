@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) and (max-width: 667px){
   .navbar {
     display: flex;
     flex-direction: column;
@@ -8,13 +8,35 @@
 
     &__title {
       font-family: $font-title;
-      font-size: 24px;
+      font-size: 48px;
       margin-top: 5px;
     }
 
     &__div--links {
-      visibility: hidden;
+      display: none;
     }
   }
 }
 
+@media screen and (min-width: 1440px){
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &__title {
+      font-family: $font-title;
+      font-size: 48px;
+    }
+
+    &__div--links {
+      text-decoration: none;
+      font-family: $font-text;
+      font-size: 20px;
+      color: $primary-color;
+      margin-left: 40px;
+    }
+  }
+}
