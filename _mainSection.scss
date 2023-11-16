@@ -29,6 +29,24 @@
   &__title--portfolio {
     font-weight:900;
     text-shadow: 15px solid black;
+    margin-top: 40px;
+    margin-bottom: 5px;
   }
   
+  &__img {
+    margin: 20px 0;
+  }
+
+  &__cardTittle {
+    font-family: $font-title;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  &__divProject {
+    display:flex ;
+    justify-content: space-between;
+  }
+
 }
