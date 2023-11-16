@@ -1,1 +1,12 @@
 @use "./variables" as *;
+
+.footer {
+  background-color: $primary-color;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  &__icons {
+    width: 40px;
+  }
+}
