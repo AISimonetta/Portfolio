@@ -16,6 +16,33 @@
   font-size: 16px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main__title {
+  font-family: "Cormorant", serif;
+  font-weight: lighter;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.main__profileImg {
+  width: 335px;
+  margin-bottom: 40px;
+  align-self: center;
+}
+.main__description {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.main__skillsSection {
+  display: none;
+}
+.main__title--portfolio {
+  font-weight: 900;
+  text-shadow: 15px solid black;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
