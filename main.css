@@ -179,6 +179,21 @@
   .main__description {
     font-size: 16px;
     margin-bottom: 40px;
+    letter-spacing: 0.05em;
+  }
+  .main__skillsSection {
+    margin: 100px 0;
+  }
+  .main__skillsContentText {
+    display: flex;
+    align-items: center;
+  }
+  .main__skillsContentText h2 {
+    justify-self: start;
+    margin-right: 120px;
+  }
+  .main__skillsContentText p {
+    justify-self: end;
   }
   .main__title--portfolio {
     font-weight: 900;

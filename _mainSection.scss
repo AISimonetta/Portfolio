@@ -85,7 +85,7 @@
 //LAPTOP-L/DESKTOP
 @media screen and (min-width: 1440px) and (max-width: 2000px){
   .main {
-
+//ABOUT SECTION
     &__aboutSection {
       display: grid;
       gap: 0.2rem;
@@ -123,6 +123,7 @@
       font-size: 18px;
     }
 
+//GENERAL CLASSES FOR TITLE & DESCRITPTION
     &__title {
       font-family: $font-title;
       font-weight: lighter;
@@ -133,6 +134,26 @@
     &__description {
       font-size: 16px;
       margin-bottom: 40px;
+      letter-spacing: 0.05em;
+    }
+
+//SKILLS SECTION
+    &__skillsSection {
+      margin: 100px 0;
+    }
+
+    &__skillsContentText {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        justify-self: start;
+        margin-right: 120px;
+      }
+
+      p {
+        justify-self: end;
+      }
     }
 
 //PORTFOLIO SECTION
