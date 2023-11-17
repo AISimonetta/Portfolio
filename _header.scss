@@ -21,3 +21,25 @@
     }
   }
 }
+
+@media screen and (min-width: 1440px){
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    &__title {
+      font-family: $font-title;
+      font-size: 120px;
+      font-weight: lighter;
+      margin-top:60px;
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      margin:40px 500px 40px 0;
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+  }
+}
