@@ -12,11 +12,18 @@
 @media screen and (min-width: 1440px) {
   .footer {
     background-color: black;
+    height: 100px;
+  }
+  .footer__groupItems {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
   }
   .footer__icons {
-    width: 40px;
+    height: 55px;
+    margin: 0 10px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 667px) {
@@ -128,15 +135,17 @@
 }
 @media screen and (min-width: 1440px) and (max-width: 2000px) {
   .main__aboutSection {
+    margin: 80px 0;
     display: grid;
     height: 100vh;
     gap: 0.5rem;
     grid-template-areas: "h2 img" "p1 img" "p2 img";
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 3fr 1fr;
   }
   .main__title--about {
     grid-area: h2;
+    padding: 30px 0;
   }
   .main__profileImg--aboutPh {
     grid-area: img;
@@ -159,11 +168,6 @@
   .main__description {
     font-size: 16px;
     margin-bottom: 40px;
-  }
-  .main__skillsSection {
-    visibility: visible;
-    display: flex;
-    flex-wrap: wrap;
   }
   .main__title--portfolio {
     font-weight: 900;

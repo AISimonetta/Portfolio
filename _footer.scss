@@ -18,11 +18,19 @@
 @media screen and (min-width: 1440px){
   .footer {
     background-color: $primary-color;
-    display: flex;
-    justify-content: space-between;
+    height: 100px;
+
+    &__groupItems {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0px;
+    }
 
     &__icons {
-      width: 40px;
+      height: 55px;
+      margin: 0 10px;
     }
   }
 }
