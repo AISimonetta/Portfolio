@@ -126,21 +126,25 @@
       margin-bottom: 40px;
     }
 
-    &__skillsContentText {
-
-    }
-
-
-//portfolio section
+//PORTFOLIO SECTION
     &__title--portfolio {
       font-weight:900;
       text-shadow: 15px solid black;
-      margin-top: 40px;
+      margin-top: 80px;
       margin-bottom: 5px;
+      font-size: 48px;
+    }
+
+    &__allCards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &__img {
       margin: 20px 0;
+      width: 420px;
+      height: 200px;
     }
 
     &__cardTittle {
@@ -156,7 +160,7 @@
       padding-right: 18px;
     }
 
-  //contact section
+//CONTACT SECTION
     &__contactSection {
       display: flex;
       flex-direction: column;

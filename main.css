@@ -176,11 +176,19 @@
   .main__title--portfolio {
     font-weight: 900;
     text-shadow: 15px solid black;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 5px;
+    font-size: 48px;
+  }
+  .main__allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .main__img {
     margin: 20px 0;
+    width: 420px;
+    height: 200px;
   }
   .main__cardTittle {
     font-family: "Cormorant", serif;
