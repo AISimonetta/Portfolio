@@ -47,6 +47,10 @@
       font-size: 32px;
     }
 
+    &__programingInfo {
+      display: none;
+    }
+
     &__divProject {
       display:flex ;
       justify-content: space-between;
@@ -83,37 +87,42 @@
   .main {
 
     &__aboutSection {
-      margin: 80px 0;
       display: grid;
-      height: 100vh;
-      gap: 0.5rem;
+      gap: 0.2rem;
       grid-template-areas:
         "h2 img"
         "p1 img"
         "p2 img";
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr ;
+      grid-template-columns: 2fr 1fr;
+      margin: 40px 0;
     }
 
     &__title--about {
       grid-area: h2;
-      padding: 30px 0;
+      padding-top: 30px;
     }
 
     &__profileImg--aboutPh {
       grid-area: img;
       width: 30vw;
       align-content: center;
+      letter-spacing: 0.05em;
     }
 
-    &__description--p1{
+    &__description--about1{
       grid-area: p1;
+      margin-right: 50px;
+      font-size: 18px;
+      letter-spacing: 0.05em;
     }
 
-    &__description--p2{
+    &__description--about2{
       grid-area: p2;
-      grid-row: 2 /3 ;
+      margin-right: 50px;
+      font-size: 18px;
     }
+
     &__title {
       font-family: $font-title;
       font-weight: lighter;
@@ -157,7 +166,22 @@
     &__divProject {
       display:flex ;
       justify-content: space-between;
-      padding-right: 18px;
+
+      img {
+        padding-left: 8px;
+        width: 45px;
+      }
+    }
+
+    &__programingInfo {
+      font-family: $font-text;
+      font-size: 14px ;
+      padding: 10px 10px;
+      margin: 15px 0;
+    }
+
+    span {
+      margin: 10px 10px;
     }
 
 //CONTACT SECTION
