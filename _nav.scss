@@ -1,5 +1,6 @@
 @use "./variables" as *;
 
+//MOBILE M
 @media screen and (min-width: 375px) and (max-width: 667px){
   .navbar {
     display: flex;
@@ -8,8 +9,9 @@
 
     &__title {
       font-family: $font-title;
-      font-size: 48px;
+      font-size: 20px;
       margin-top: 5px;
+      text-align: center;
     }
 
     &__div--links {
@@ -18,6 +20,7 @@
   }
 }
 
+//LAPTOP-L/DESKTOP
 @media screen and (min-width: 1440px){
   .navbar {
     display: flex;
@@ -28,7 +31,7 @@
 
     &__title {
       font-family: $font-title;
-      font-size: 48px;
+      font-size: 40px;
     }
 
     &__div--links {

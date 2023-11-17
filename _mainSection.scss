@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-
+//MOBILE M
 @media screen and (min-width: 375px)  and (max-width: 667px){
   .main {
     display: flex;
@@ -22,6 +22,7 @@
     &__description {
       font-size: 16px;
       margin-bottom: 40px;
+      letter-spacing: 0.05em
     }
 
     &__skillsSection {
@@ -77,13 +78,39 @@
   }
 }
 
-@media screen and (min-width: 1440px){
+//LAPTOP-L/DESKTOP
+@media screen and (min-width: 1440px) and (max-width: 2000px){
   .main {
 
     &__aboutSection {
       display: grid;
-      grid-template-areas: "h2" "img"
-                ;
+      height: 100vh;
+      gap: 0.5rem;
+      grid-template-areas:
+        "h2 img"
+        "p1 img"
+        "p2 img";
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-columns: 3fr 1fr;
+    }
+
+    &__title--about {
+      grid-area: h2;
+    }
+
+    &__profileImg--aboutPh {
+      grid-area: img;
+      width: 30vw;
+      align-content: center;
+    }
+
+    &__description--p1{
+      grid-area: p1;
+    }
+
+    &__description--p2{
+      grid-area: p2;
+      grid-row: 2 /3 ;
     }
 
     &__title {
@@ -93,21 +120,20 @@
       margin-bottom: 40px;
     }
 
-    &__profileImg {
-      width: 335px;
-      margin-bottom: 40px;
-      align-self: center;
-    }
-
     &__description {
       font-size: 16px;
       margin-bottom: 40px;
     }
 
+    //skils sections
     &__skillsSection {
-      display:none;
+      visibility: visible;
+      display: flex;
+      flex-wrap: wrap;
     }
 
+
+//portfolio section
     &__title--portfolio {
       font-weight:900;
       text-shadow: 15px solid black;

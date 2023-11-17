@@ -1,5 +1,6 @@
 @use "./variables" as *;
 
+//MOBILE M
 @media screen and (min-width: 375px)  and (max-width: 667px){
   .header {
     display: flex;
@@ -18,19 +19,23 @@
       margin-top:40px;
       margin-bottom: 40px;
       font-size: 16px;
+      letter-spacing: 0.05em
     }
   }
 }
 
+//LAPTOP-L/DESKTOP
 @media screen and (min-width: 1440px){
   .header {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-left: 40px;
+    margin-right: 40px;
 
     &__title {
       font-family: $font-title;
-      font-size: 120px;
+      font-size: 110px;
       font-weight: lighter;
       margin-top:60px;
       margin-bottom: 40px;
@@ -38,8 +43,9 @@
 
     &__description {
       margin:40px 500px 40px 0;
-      font-size: 16px;
+      font-size: 20px;
       margin-bottom: 60px;
+      letter-spacing: 0.05em
     }
   }
 }
