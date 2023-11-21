@@ -79,6 +79,12 @@
       padding: 25px 80px;
       margin-bottom: 40px;
     }
+
+    &__button:hover{
+      background-color: $gray-color;
+      border: 1px solid $gray-color;
+      color: $background-color;
+    }
   }
 }
 
@@ -177,6 +183,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      gap: 2px;
     }
 
     &__img {
@@ -195,6 +202,7 @@
     &__divProject {
       display:flex ;
       justify-content: space-between;
+      padding-right: 10px;
 
       img {
         padding-left: 8px;
@@ -234,6 +242,12 @@
       border: 1px solid black;
       padding: 25px 100px;
       margin-bottom: 70px;
+    }
+
+    &__button:hover{
+      background-color: $gray-color;
+      border: 1px solid $gray-color;
+      color: $background-color;
     }
   }
 }

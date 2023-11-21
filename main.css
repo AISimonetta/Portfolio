@@ -23,7 +23,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 25px 0px;
+    padding-top: 25px;
   }
   .footer__icons {
     height: 55px;
@@ -139,6 +139,11 @@
     padding: 25px 80px;
     margin-bottom: 40px;
   }
+  .main__button:hover {
+    background-color: rgb(107, 107, 107);
+    border: 1px solid rgb(107, 107, 107);
+    color: #fff;
+  }
 }
 @media screen and (min-width: 1440px) and (max-width: 2000px) {
   .main__aboutSection {
@@ -215,6 +220,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2px;
   }
   .main__img {
     margin: 20px 0;
@@ -230,6 +236,7 @@
   .main__divProject {
     display: flex;
     justify-content: space-between;
+    padding-right: 10px;
   }
   .main__divProject img {
     padding-left: 8px;
@@ -263,6 +270,11 @@
     border: 1px solid black;
     padding: 25px 100px;
     margin-bottom: 70px;
+  }
+  .main__button:hover {
+    background-color: rgb(107, 107, 107);
+    border: 1px solid rgb(107, 107, 107);
+    color: #fff;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 667px) {
@@ -299,6 +311,10 @@
     font-size: 20px;
     color: black;
     margin-left: 40px;
+  }
+  .navbar__div--links:hover {
+    color: rgb(107, 107, 107);
+    text-decoration: underline;
   }
 }
 * {
