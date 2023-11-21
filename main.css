@@ -195,6 +195,15 @@
   .main__skillsContentText p {
     justify-self: end;
   }
+  .main__skillsIcons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .main__skillsImg {
+    padding: 0 20px;
+    height: 100px;
+  }
   .main__title--portfolio {
     font-weight: 900;
     text-shadow: 15px solid black;
