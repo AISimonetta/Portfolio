@@ -1,51 +1,62 @@
 @use "./variables" as *;
 
-//MOBILE M
-@media screen and (min-width: 375px)  and (max-width: 667px){
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 
-    &__title {
-      font-family: $font-title;
-      font-size: 80px;
-      font-weight: lighter;
-      margin-top:60px;
-      margin-bottom: 40px;
-    }
+  &__title {
+    font-family: $font-title;
+    font-size: 65px;
+    font-weight: lighter;
+    margin-top:60px;
+    margin-bottom: 20px;
+  }
 
-    &__description {
-      margin-top:40px;
-      margin-bottom: 40px;
-      font-size: 16px;
-      letter-spacing: 0.05em
-    }
+  &__description {
+    margin-top:40px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    letter-spacing: 0.05em
+  }
+
+  .letter__darkGrey{
+    color: $gray-color ;
+  }
+
+  .letter__lightGrey {
+    color: $gray-light-color ;
+  }
+  .letter__sand {
+    color: $sand-color ;
   }
 }
+
 
 //LAPTOP-L/DESKTOP
 @media screen and (min-width: 1440px){
   .header {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    align-items: center;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 30px;
 
     &__title {
       font-family: $font-title;
-      font-size: 110px;
+      font-size: 80px;
       font-weight: lighter;
-      margin-top:60px;
+      margin-top:50px;
       margin-bottom: 40px;
     }
 
     &__description {
-      margin:40px 500px 40px 0;
       font-size: 20px;
+      font-weight: lighter;
       margin-bottom: 60px;
-      letter-spacing: 0.05em
+      letter-spacing: 0.05em;
+      text-align: center;
     }
   }
 }

@@ -1,23 +1,22 @@
 @use "./variables" as *;
 
-//MOBILE M
-@media screen and (min-width: 375px)  and (max-width: 667px){
-  .footer {
-    background-color: $primary-color;
-    height: 100px;
+.footer {
+  background-color: $primary-color;
+  height: 100px;
 
-    &__groupItems {
-    padding: 20px 90px;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    }
+  &__groupItems {
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  }
 
-    &__icons {
-      height: 55px;
-    }
+  &__icons {
+    height: 55px;
+    padding: 0 10px;
   }
 }
+
 
 //LAPTOP-L/DESKTOP
 @media screen and (min-width: 1440px){

@@ -1,95 +1,131 @@
 @use "./variables" as *;
 
-//MOBILE M
-@media screen and (min-width: 375px)  and (max-width: 667px){
-  .main {
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $font-title;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__aboutSection {
     display: flex;
     flex-direction: column;
-
-    &__title {
-      font-family: $font-title;
-      font-weight: lighter;
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    &__profileImg {
-      width: 335px;
-      margin-bottom: 40px;
-      align-self: center;
-    }
-
-    &__description {
-      font-size: 16px;
-      margin-bottom: 40px;
-      letter-spacing: 0.05em
-    }
-
-    &__skillsSection {
-      display:none;
-    }
-
-    &__title--portfolio {
-      font-weight:900;
-      text-shadow: 15px solid black;
-      margin-top: 40px;
-      margin-bottom: 5px;
-    }
-
-    &__img {
-      margin: 20px 0;
-    }
-
-    &__cardTittle {
-      font-family: $font-title;
-      font-weight: lighter;
-      margin-bottom: 10px;
-      font-size: 32px;
-    }
-
-    &__programingInfo {
-      display: none;
-    }
-
-    &__divProject {
-      display:flex ;
-      justify-content: space-between;
-      padding-right: 18px;
-    }
-
-    &__contactSection {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__contactTitle {
-      margin: 60px 20px 40px 20px;
-      font-size: 80px;
-      font-family: $font-title;
-      font-weight: lighter;
-      text-align: center;
-    }
-
-    &__button{
-      background-color: $background-color;
-      font-family: $font-text;
-      font-size: 18px;
-      border: 1px solid black;
-      padding: 25px 80px;
-      margin-bottom: 40px;
-    }
-
-    &__button:hover{
-      background-color: $gray-color;
-      border: 1px solid $gray-color;
-      color: $background-color;
-    }
   }
+
+  &__profileImg {
+    width: 300px;
+    margin-bottom: 40px;
+    align-self: center;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  &__skillsSection {
+    display:none;
+  }
+
+  &__title--portfolio {
+    font-weight:900;
+    text-shadow: 15px solid black;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  &__img {
+    margin: 20px 0;
+    width: 280px;
+    height: 270px;
+    align-self: center;
+    filter: grayscale(40%);
+  }
+
+  &__cardTittle {
+    font-family: $font-title;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  &__programingInfo {
+    display: none;
+  }
+
+  &__divProject {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__contactTitle {
+    margin: 60px 20px 40px 20px;
+    font-size: 80px;
+    font-family: $font-title;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  &__button{
+    background-color: $background-color;
+    font-family: $font-text;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 25px 80px;
+    margin-bottom: 40px;
+  }
+
+  &__button:hover{
+    background-color: $gray-color;
+    border: 1px solid $gray-color;
+    color: $background-color;
+  }
+
+  &__portfolioSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+
+  &__title--portfolio {
+    align-self: start;
+
+  }
+  .letter__darkGrey{
+    color: $gray-color ;
+  }
+  .letter__lightGrey {
+    color: $gray-light-color ;
+  }
+
+  .letter__sand {
+    color: $sand-color ;
+  }
+  
 }
 
+
 //LAPTOP-L/DESKTOP
-@media screen and (min-width: 1440px) and (max-width: 2000px){
+@media screen and (min-width: 1440px){
   .main {
 //&ABOUT SECTION
     &__aboutSection {
@@ -106,7 +142,7 @@
 
     &__title--about {
       grid-area: h2;
-      padding-top: 30px;
+      padding-top: 50px;
     }
 
     &__profileImg--aboutPh {
@@ -137,8 +173,8 @@
     }
 
     &__description {
-      font-size: 16px;
-      margin-bottom: 40px;
+      font-size: 18px;
+      margin-bottom: 30px;
       letter-spacing: 0.05em;
     }
 //&SKILLS SECTION
@@ -171,12 +207,17 @@
       height: 100px;
     }
 //&PORTFOLIO SECTION
+    &__portfolioSection {
+      background-color: #9090907d;
+      padding: 0px 20px;
+      padding-bottom: 20px;
+    }
     &__title--portfolio {
       font-weight:900;
       text-shadow: 15px solid black;
-      margin-top: 80px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       font-size: 48px;
+      padding-bottom: 10px;
     }
 
     &__allCards{
@@ -188,8 +229,10 @@
 
     &__img {
       margin: 20px 0;
-      width: 420px;
-      height: 200px;
+      width: 400px;
+      height: 300px;
+      filter: grayscale(40%);
+      padding: 0 10px;
     }
 
     &__cardTittle {
@@ -197,8 +240,13 @@
       font-weight: lighter;
       margin-bottom: 10px;
       font-size: 32px;
+      padding-left: 10px;
     }
 
+    &cardIcons {
+      padding-right: 10px;
+    }
+ 
     &__divProject {
       display:flex ;
       justify-content: space-between;
@@ -218,7 +266,7 @@
     }
 
     span {
-      margin: 10px 10px;
+      margin: 10px 0px;
     }
 //&CONTACT SECTION
     &__contactSection {
