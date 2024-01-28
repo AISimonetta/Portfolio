@@ -8,14 +8,18 @@ Embark on the journey through my very first project, crafted during my immersive
 
 ✦ Portfolio Project Preview:
 
-Screenshot 2024-01-28 at 11 28 18
+![Screenshot 2024-01-28 at 11 28 18](https://github.com/AISimonetta/Portfolio/assets/122782260/15e6f976-6e0a-418a-ab7f-5194c183191b)
 
 ✦ Project Structure:
 
-HEADER
-NAVBAR
-MAIN SECTION
-FOOTER
+  -HEADER
+  
+  -NAVBAR
+  
+  -MAIN SECTION
+  
+  -FOOTER
+
 The website is meticulously structured following responsive design principles, ensuring adaptability to various screen sizes. Media queries and flexbox were strategically employed to achieve this harmonious responsiveness.
 
 ✦ Setup Instructions:
