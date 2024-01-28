@@ -137,7 +137,7 @@
         "p2 img";
       grid-template-rows: 1fr 1fr 1fr ;
       grid-template-columns: 2fr 1fr;
-      margin: 40px 0;
+      margin-top: 40px;
     }
 
     &__title--about {
@@ -147,9 +147,10 @@
 
     &__profileImg--aboutPh {
       grid-area: img;
-      width: 30vw;
+      width: 25vw;
       align-content: center;
       letter-spacing: 0.05em;
+      padding-top: 50px;
     }
 
     &__description--about1{
@@ -220,6 +221,9 @@
       padding-bottom: 10px;
     }
 
+    &__card {
+      margin-bottom: 15px;
+    }
     &__allCards{
       display: flex;
       flex-wrap: wrap;
@@ -297,5 +301,13 @@
       border: 1px solid $gray-color;
       color: $background-color;
     }
+  }
+
+  .bottomHr{
+    margin: 100px 0;
+  }
+  .mediumHr {
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 }
