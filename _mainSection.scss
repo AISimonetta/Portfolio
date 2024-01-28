@@ -14,6 +14,7 @@
   &__aboutSection {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
   }
 
   &__profileImg {
@@ -34,6 +35,13 @@
     display:none;
   }
 
+  &__card {
+    margin-bottom: 15px;
+    background-color: #90909047;
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+
   &__title--portfolio {
     font-weight:900;
     text-shadow: 15px solid black;
@@ -42,7 +50,7 @@
   }
 
   &__img {
-    margin: 20px 0;
+    margin: 10px 0;
     width: 280px;
     height: 270px;
     align-self: center;
@@ -75,7 +83,7 @@
   }
 
   &__contactTitle {
-    margin: 60px 20px 40px 20px;
+    margin: 20px 20px 40px 20px;
     font-size: 80px;
     font-family: $font-title;
     font-weight: lighter;
@@ -120,7 +128,10 @@
   .letter__sand {
     color: $sand-color ;
   }
-  
+
+  .bottomHr {
+    margin-top: 30px;
+  }
 }
 
 
@@ -137,12 +148,12 @@
         "p2 img";
       grid-template-rows: 1fr 1fr 1fr ;
       grid-template-columns: 2fr 1fr;
-      margin-top: 40px;
+      // margin-top: 40px;
     }
 
     &__title--about {
       grid-area: h2;
-      padding-top: 50px;
+      // padding-top: 50px;
     }
 
     &__profileImg--aboutPh {
@@ -209,7 +220,7 @@
     }
 //&PORTFOLIO SECTION
     &__portfolioSection {
-      background-color: #9090907d;
+      background-color: #90909047;
       padding: 0px 20px;
       padding-bottom: 20px;
     }
@@ -223,7 +234,9 @@
 
     &__card {
       margin-bottom: 15px;
+      background-color: white;
     }
+
     &__allCards{
       display: flex;
       flex-wrap: wrap;
@@ -250,7 +263,7 @@
     &cardIcons {
       padding-right: 10px;
     }
- 
+
     &__divProject {
       display:flex ;
       justify-content: space-between;
@@ -301,13 +314,15 @@
       border: 1px solid $gray-color;
       color: $background-color;
     }
+
+    .bottomHr{
+      margin-top: 100px;
+    }
+    .mediumHr {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
   }
 
-  .bottomHr{
-    margin: 100px 0;
-  }
-  .mediumHr {
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
+
 }
