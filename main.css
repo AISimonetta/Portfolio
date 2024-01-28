@@ -325,7 +325,7 @@
     align-items: center;
   }
   .main__contactTitle {
-    margin: 60px 20px 40px 20px;
+    margin: 30px 20px 30px 20px;
     font-size: 128px;
     font-family: "Cormorant", serif;
     font-weight: lighter;
@@ -336,7 +336,7 @@
     font-family: "Inter", sans-serif;
     font-size: 24px;
     border: 1px solid black;
-    padding: 25px 100px;
+    padding: 15px 100px;
     margin-bottom: 70px;
   }
   .main__button:hover {
@@ -345,11 +345,10 @@
     color: #fff;
   }
   .main .bottomHr {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .main .mediumHr {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 }
 .navbar {
