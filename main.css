@@ -286,8 +286,8 @@
   }
   .main__img {
     margin: 20px 0;
-    width: 400px;
-    height: 300px;
+    width: 380px;
+    height: 280px;
     filter: grayscale(40%);
     padding: 0 10px;
   }
