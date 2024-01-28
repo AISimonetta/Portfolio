@@ -20,7 +20,7 @@ Embark on the journey through my very first project, crafted during my immersive
   
   -FOOTER
 
-The website is meticulously structured following responsive design principles, ensuring adaptability to various screen sizes. Media queries and flexbox were strategically employed to achieve this harmonious responsiveness.
+The website is  structured following responsive design principles, ensuring adaptability to various screen sizes. Media queries and flexbox were  employed to achieve this harmonious responsiveness.
 
 ✦ Setup Instructions:
 
@@ -28,6 +28,7 @@ To explore this project, kindly follow these instructions:
 
 Clone this repository to your local machine and open the index.html file in a web browser.
 Alternatively, visit the deployed live version: Portfolio Live Version.
+
 ✦ Contact:
 
 For any inquiries, feedback, or contributions to this project, please don't hesitate to get in touch. Your engagement is highly appreciated!
