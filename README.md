@@ -6,7 +6,7 @@ Embark on the journey through my very first project, crafted during my immersive
 
 | HTML | SCSS | 
 
-***BEM Methodology were used in this project.
+***BEM Methodology was used in this project.
 
 ✦ Portfolio Project Preview:
 
