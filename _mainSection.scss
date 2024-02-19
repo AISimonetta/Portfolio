@@ -25,10 +25,11 @@
 
   &__description {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 0.05em;
     font-weight: lighter;
     font-style: italic;
+    text-align: center;
   }
 
   &__skillsSection {
@@ -61,7 +62,7 @@
     font-family: $font-title;
     font-weight: lighter;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 20px;
     margin-right: 10px;
   }
 
@@ -116,6 +117,8 @@
 
   &__title--portfolio {
     align-self: start;
+    margin-bottom: 40px;
+
 
   }
   .letter__darkGrey{
@@ -129,17 +132,12 @@
     color: $sand-color ;
   }
 
-  .bottomHr {
-    margin-top: 30px;
-  }
-
-  .mediumHr--laptopView {
-    display: none;
-  }
+ hr {
+  display: none;
+ }
 }
 
 
-//LAPTOP-L/DESKTOP
 @media screen and (min-width: 1440px){
   .main {
 //&ABOUT SECTION
@@ -326,15 +324,22 @@
 
     .bottomHr{
       margin-top: 60px;
+      border-style: dotted none none;
+      border-width: 5px;
     }
 
     .mediumHr {
+      display: flex;
       margin-bottom: 40px;
+      border-style: dotted none none;
+      border-width: 5px;
     }
 
     .mediumHr--laptopView {
       display: flex;
       margin-bottom: 60px;
+      border-style: dotted none none;
+      border-width: 5px;
     }
   }
 

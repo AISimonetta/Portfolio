@@ -5,11 +5,12 @@
   flex-direction: column;
   justify-content: start;
 
+
   &__title {
     font-family: $font-title;
     font-size: 65px;
     font-weight: lighter;
-    margin-top:60px;
+    margin-top:20px;
     margin-bottom: 20px;
   }
 
@@ -17,7 +18,8 @@
     margin-top:40px;
     margin-bottom: 40px;
     font-size: 14px;
-    letter-spacing: 0.05em
+    letter-spacing: 0.05em;
+    font-weight: lighter;
   }
 
   .letter__darkGrey{
@@ -30,21 +32,28 @@
   .letter__sand {
     color: $sand-color ;
   }
+
+  hr {
+    display: none;
+  }
 }
 
 
 //LAPTOP-L/DESKTOP
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 768px){
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 40px;
     margin-right: 40px;
+    // width: 100vw;
 
     hr {
-      width: 105%;
+      width: 100vw;
       margin: 20px 0;
+      border-style: dotted none none;
+      border-width: 5px;
     }
     &__title {
       font-family: $font-title;

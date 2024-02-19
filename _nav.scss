@@ -8,6 +8,7 @@
   background-color: $primary-color;
   height: 50px;
   margin-left: unset;
+  width: 100vw;
 
   &__title {
     font-family: $font-title;
@@ -24,8 +25,7 @@
 }
 
 
-//LAPTOP-L/DESKTOP
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 768px){
   .navbar {
     display: flex;
     flex-direction: row;

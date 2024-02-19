@@ -39,7 +39,7 @@
   font-family: "Cormorant", serif;
   font-size: 65px;
   font-weight: lighter;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .header__description {
@@ -47,6 +47,7 @@
   margin-bottom: 40px;
   font-size: 14px;
   letter-spacing: 0.05em;
+  font-weight: lighter;
 }
 .header .letter__darkGrey {
   color: rgb(107, 107, 107);
@@ -57,8 +58,11 @@
 .header .letter__sand {
   color: #e6d5ba;
 }
+.header hr {
+  display: none;
+}
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -67,8 +71,10 @@
     margin-right: 40px;
   }
   .header hr {
-    width: 105%;
+    width: 100vw;
     margin: 20px 0;
+    border-style: dotted none none;
+    border-width: 5px;
   }
   .header__title {
     font-family: "Cormorant", serif;
@@ -107,10 +113,11 @@
 }
 .main__description {
   font-size: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   letter-spacing: 0.05em;
   font-weight: lighter;
   font-style: italic;
+  text-align: center;
 }
 .main__skillsSection {
   display: none;
@@ -138,7 +145,7 @@
   font-family: "Cormorant", serif;
   font-weight: lighter;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 10px;
 }
 .main__programingInfo {
@@ -185,6 +192,7 @@
 }
 .main__title--portfolio {
   align-self: start;
+  margin-bottom: 40px;
 }
 .main .letter__darkGrey {
   color: rgb(107, 107, 107);
@@ -195,10 +203,7 @@
 .main .letter__sand {
   color: #e6d5ba;
 }
-.main .bottomHr {
-  margin-top: 30px;
-}
-.main .mediumHr--laptopView {
+.main hr {
   display: none;
 }
 
@@ -353,13 +358,20 @@
   }
   .main .bottomHr {
     margin-top: 60px;
+    border-style: dotted none none;
+    border-width: 5px;
   }
   .main .mediumHr {
+    display: flex;
     margin-bottom: 40px;
+    border-style: dotted none none;
+    border-width: 5px;
   }
   .main .mediumHr--laptopView {
     display: flex;
     margin-bottom: 60px;
+    border-style: dotted none none;
+    border-width: 5px;
   }
 }
 .navbar {
@@ -369,6 +381,7 @@
   background-color: black;
   height: 50px;
   margin-left: unset;
+  width: 100vw;
 }
 .navbar__title {
   font-family: "Cormorant", serif;
@@ -382,7 +395,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .navbar {
     display: flex;
     flex-direction: row;
@@ -423,6 +436,7 @@
 }
 
 body {
+  width: 100vw;
   font-family: "Inter", sans-serif;
   background-color: white;
   background-size: cover;
@@ -430,10 +444,10 @@ body {
 }
 
 .wholePage {
-  margin: 20px 20px;
+  margin: 20px 30px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .wholePage {
     margin: 40px 80px;
   }
