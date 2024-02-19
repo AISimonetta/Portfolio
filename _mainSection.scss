@@ -132,6 +132,10 @@
   .bottomHr {
     margin-top: 30px;
   }
+
+  .mediumHr--laptopView {
+    display: none;
+  }
 }
 
 
@@ -148,12 +152,10 @@
         "p2 img";
       grid-template-rows: 1fr 1fr 1fr ;
       grid-template-columns: 2fr 1fr;
-      // margin-top: 40px;
     }
 
     &__title--about {
       grid-area: h2;
-      // padding-top: 50px;
     }
 
     &__profileImg--aboutPh {
@@ -161,7 +163,7 @@
       width: 25vw;
       align-content: center;
       letter-spacing: 0.05em;
-      padding-top: 50px;
+      padding-bottom: 20px;
     }
 
     &__description--about1{
@@ -169,6 +171,10 @@
       margin-right: 50px;
       font-size: 18px;
       letter-spacing: 0.05em;
+      text-align: center;
+      color: #b9aa92;
+      font-weight: lighter;
+      letter-spacing: 1px;
     }
 
     &__description--about2{
@@ -190,8 +196,10 @@
       letter-spacing: 0.05em;
     }
 //&SKILLS SECTION
+
     &__skillsSection {
-      margin: 100px 0;
+      display: flex;
+      margin-bottom: 50px;
     }
 
     &__skillsContentText {
@@ -218,6 +226,8 @@
       padding: 0 20px;
       height: 100px;
     }
+
+
 //&PORTFOLIO SECTION
     &__portfolioSection {
       background-color: #90909047;
@@ -293,7 +303,6 @@
     }
 
     &__contactTitle {
-      margin: 30px 20px 30px 20px;
       font-size: 128px;
       font-family: $font-title;
       font-weight: lighter;
@@ -306,7 +315,7 @@
       font-size: 24px;
       border: 1px solid black;
       padding: 15px 100px;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
     }
 
     &__button:hover{
@@ -318,8 +327,14 @@
     .bottomHr{
       margin-top: 60px;
     }
+
     .mediumHr {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
+    }
+
+    .mediumHr--laptopView {
+      display: flex;
+      margin-bottom: 60px;
     }
   }
 

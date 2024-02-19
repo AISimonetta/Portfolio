@@ -68,17 +68,17 @@
   }
   .header hr {
     width: 105%;
-    margin: 40px 0;
+    margin: 20px 0;
   }
   .header__title {
     font-family: "Cormorant", serif;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: lighter;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .header__description {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
     margin-bottom: 50px;
     letter-spacing: 0.05em;
@@ -198,6 +198,9 @@
 .main .bottomHr {
   margin-top: 30px;
 }
+.main .mediumHr--laptopView {
+  display: none;
+}
 
 @media screen and (min-width: 1440px) {
   .main__aboutSection {
@@ -215,13 +218,17 @@
     width: 25vw;
     align-content: center;
     letter-spacing: 0.05em;
-    padding-top: 50px;
+    padding-bottom: 20px;
   }
   .main__description--about1 {
     grid-area: p1;
     margin-right: 50px;
     font-size: 18px;
     letter-spacing: 0.05em;
+    text-align: center;
+    color: #b9aa92;
+    font-weight: lighter;
+    letter-spacing: 1px;
   }
   .main__description--about2 {
     grid-area: p2;
@@ -240,7 +247,8 @@
     letter-spacing: 0.05em;
   }
   .main__skillsSection {
-    margin: 100px 0;
+    display: flex;
+    margin-bottom: 50px;
   }
   .main__skillsContentText {
     display: flex;
@@ -325,7 +333,6 @@
     align-items: center;
   }
   .main__contactTitle {
-    margin: 30px 20px 30px 20px;
     font-size: 128px;
     font-family: "Cormorant", serif;
     font-weight: lighter;
@@ -337,7 +344,7 @@
     font-size: 24px;
     border: 1px solid black;
     padding: 15px 100px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
   .main__button:hover {
     background-color: rgb(107, 107, 107);
@@ -348,7 +355,11 @@
     margin-top: 60px;
   }
   .main .mediumHr {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+  }
+  .main .mediumHr--laptopView {
+    display: flex;
+    margin-bottom: 60px;
   }
 }
 .navbar {
@@ -393,9 +404,10 @@
     flex-direction: row;
     text-decoration: none;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     padding: 0 10px;
+    font-weight: lighter;
   }
 }
 .navbar__div--allLinks {
