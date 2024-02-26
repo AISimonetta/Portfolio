@@ -11,16 +11,20 @@
     margin-bottom: 40px;
   }
 
-  &__aboutSection {
+  &__aboutSection--container {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    align-items: center;
+    justify-content: center;
   }
 
   &__profileImg {
     width: 300px;
     margin-bottom: 40px;
     align-self: center;
+    margin-top: 30px;
+    border-radius: 50%;
   }
 
   &__description {
@@ -29,7 +33,7 @@
     letter-spacing: 0.05em;
     font-weight: lighter;
     font-style: italic;
-    text-align: center;
+    text-align: start;
   }
 
   &__skillsSection {
@@ -84,8 +88,8 @@
   }
 
   &__contactTitle {
-    margin: 20px 20px 40px 20px;
-    font-size: 80px;
+    margin: 20px 20px 30px 20px;
+    font-size: 70px;
     font-family: $font-title;
     font-weight: lighter;
     text-align: center;
@@ -94,10 +98,10 @@
   &__button{
     background-color: $background-color;
     font-family: $font-text;
-    font-size: 18px;
+    font-size: 12px;
     border: 1px solid black;
-    padding: 25px 80px;
-    margin-bottom: 40px;
+    padding: 20px 40px;
+    margin-bottom: 30px;
   }
 
   &__button:hover{
@@ -113,17 +117,27 @@
     padding: 0px 10px;
     padding-right: 5px;
     padding-bottom: 10px;
+    justify-content: space-evenly;
   }
 
   &__title--portfolio {
     align-self: start;
     margin-bottom: 40px;
+  }
 
+  &__card--tech {
+    color:black;
+    font-family: $font-title;
+    font-size: smaller;
+    padding: 15px 0px;
+    padding-bottom: 15px;
 
   }
+
   .letter__darkGrey{
     color: $gray-color ;
   }
+
   .letter__lightGrey {
     color: $gray-light-color ;
   }
@@ -141,52 +155,38 @@
 @media screen and (min-width: 1440px){
   .main {
 //&ABOUT SECTION
-    &__aboutSection {
-      display: grid;
-      gap: 0.1rem;
-      grid-template-areas:
-        "h2 img"
-        "p1 img"
-        "p2 img";
-      grid-template-rows: 1fr 1fr 1fr ;
-      grid-template-columns: 2fr 1fr;
-    }
 
-    &__title--about {
-      grid-area: h2;
+    &__aboutSection--container {
+      display: unset;
+      display: flex!important;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 100px;
+      margin-top: -30px !important;
     }
-
     &__profileImg--aboutPh {
-      grid-area: img;
-      width: 25vw;
-      align-content: center;
-      letter-spacing: 0.05em;
+      width: 400px;
       padding-bottom: 20px;
+      border-radius: 50%;
     }
 
     &__description--about1{
-      grid-area: p1;
-      margin-right: 50px;
-      font-size: 18px;
-      letter-spacing: 0.05em;
+      width: 60%;
+      font-size: 22px;
       text-align: center;
       background-color: #e3d1b5c7;
-      padding: 10px 10px;
       color: black;
       font-weight: lighter;
       letter-spacing: 1px;
+      height: 300px;
+      padding: 70px 20px;
     }
 
-    &__description--about2{
-      grid-area: p2;
-      margin-right: 50px;
-      font-size: 18px;
-    }
 //&GENERAL CLASSES FOR TITLE & DESCRITPTION
     &__title {
       font-family: $font-title;
       font-weight: lighter;
-      font-size: 46px;
+      font-size: 40px;
       margin-bottom: 40px;
     }
 
@@ -199,7 +199,7 @@
 
     &__skillsSection {
       display: flex;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     &__skillsContentText {
@@ -233,12 +233,15 @@
       background-color: #90909047;
       padding: 0px 20px;
       padding-bottom: 20px;
+      align-items: center;
+      justify-content: space-evenly;
     }
+
     &__title--portfolio {
       font-weight:900;
       text-shadow: 15px solid black;
       margin-bottom: 15px;
-      font-size: 46px;
+      font-size: 40px;
       padding-bottom: 10px;
     }
 
@@ -250,8 +253,7 @@
     &__allCards{
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 2px;
+      justify-content: space-evenly;
     }
 
     &__img {
@@ -266,7 +268,7 @@
       font-family: $font-title;
       font-weight: lighter;
       margin-bottom: 10px;
-      font-size: 32px;
+      font-size: 26px;
       padding-left: 10px;
     }
 
@@ -285,15 +287,14 @@
       }
     }
 
-    &__programingInfo {
-      font-family: $font-text;
-      font-size: 14px ;
-      padding: 10px 10px;
-      margin: 15px 0;
-    }
-
     span {
       margin: 10px 0px;
+    }
+
+    &__card--tech {
+      padding: 15px 10px;
+      overflow: hidden;
+      white-space: nowrap;
     }
 //&CONTACT SECTION
     &__contactSection {
@@ -303,7 +304,7 @@
     }
 
     &__contactTitle {
-      font-size: 110px;
+      font-size: 80px;
       font-family: $font-title;
       font-weight: lighter;
       text-align: center;
@@ -312,10 +313,10 @@
     &__button{
       background-color: $background-color;
       font-family: $font-text;
-      font-size: 20px;
+      font-size: 14px;
       border: 1px solid black;
-      padding: 15px 100px;
-      margin-bottom: 30px;
+      padding: 20px 50px;
+      margin-bottom: 20px;
     }
 
     &__button:hover{
@@ -332,18 +333,17 @@
 
     .mediumHr {
       display: flex;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       border-style: dotted none none;
       border-width: 5px;
     }
 
     .mediumHr--laptopView {
       display: flex;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
       border-style: dotted none none;
       border-width: 5px;
     }
   }
-
 
 }

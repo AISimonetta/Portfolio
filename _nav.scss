@@ -12,7 +12,7 @@
 
   &__title {
     font-family: $font-title;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 5px;
     text-align: center;
     color: white;
@@ -37,7 +37,7 @@
 
     &__title {
       font-family: $font-title;
-      font-size: 30px;
+      font-size: 22px;
       color: white;
       padding-left: 80px;
       padding-bottom: 10px;
@@ -54,11 +54,6 @@
       font-weight: lighter;
       }
     }
-
-    // &__div--links:hover {
-    //   color: $gray-color;
-    //   text-decoration: underline;
-    // }
 }
 
 .navbar__div--allLinks {

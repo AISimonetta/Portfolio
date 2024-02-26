@@ -37,15 +37,15 @@
 }
 .header__title {
   font-family: "Cormorant", serif;
-  font-size: 65px;
+  font-size: 56px;
   font-weight: lighter;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .header__description {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 12px;
   letter-spacing: 0.05em;
   font-weight: lighter;
 }
@@ -78,13 +78,13 @@
   }
   .header__title {
     font-family: "Cormorant", serif;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: lighter;
-    margin-top: 10px;
+    margin-top: -5px;
     margin-bottom: 10px;
   }
   .header__description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
     margin-bottom: 50px;
     letter-spacing: 0.05em;
@@ -101,15 +101,19 @@
   font-size: 32px;
   margin-bottom: 40px;
 }
-.main__aboutSection {
+.main__aboutSection--container {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .main__profileImg {
   width: 300px;
   margin-bottom: 40px;
   align-self: center;
+  margin-top: 30px;
+  border-radius: 50%;
 }
 .main__description {
   font-size: 14px;
@@ -117,7 +121,7 @@
   letter-spacing: 0.05em;
   font-weight: lighter;
   font-style: italic;
-  text-align: center;
+  text-align: start;
 }
 .main__skillsSection {
   display: none;
@@ -163,8 +167,8 @@
   align-items: center;
 }
 .main__contactTitle {
-  margin: 20px 20px 40px 20px;
-  font-size: 80px;
+  margin: 20px 20px 30px 20px;
+  font-size: 70px;
   font-family: "Cormorant", serif;
   font-weight: lighter;
   text-align: center;
@@ -172,10 +176,10 @@
 .main__button {
   background-color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   border: 1px solid black;
-  padding: 25px 80px;
-  margin-bottom: 40px;
+  padding: 20px 40px;
+  margin-bottom: 30px;
 }
 .main__button:hover {
   background-color: rgb(107, 107, 107);
@@ -189,10 +193,18 @@
   padding: 0px 10px;
   padding-right: 5px;
   padding-bottom: 10px;
+  justify-content: space-evenly;
 }
 .main__title--portfolio {
   align-self: start;
   margin-bottom: 40px;
+}
+.main__card--tech {
+  color: black;
+  font-family: "Cormorant", serif;
+  font-size: smaller;
+  padding: 15px 0px;
+  padding-bottom: 15px;
 }
 .main .letter__darkGrey {
   color: rgb(107, 107, 107);
@@ -208,44 +220,34 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .main__aboutSection {
-    display: grid;
-    gap: 0.1rem;
-    grid-template-areas: "h2 img" "p1 img" "p2 img";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 2fr 1fr;
-  }
-  .main__title--about {
-    grid-area: h2;
+  .main__aboutSection--container {
+    display: unset;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 100px;
+    margin-top: -30px !important;
   }
   .main__profileImg--aboutPh {
-    grid-area: img;
-    width: 25vw;
-    align-content: center;
-    letter-spacing: 0.05em;
+    width: 400px;
     padding-bottom: 20px;
+    border-radius: 50%;
   }
   .main__description--about1 {
-    grid-area: p1;
-    margin-right: 50px;
-    font-size: 18px;
-    letter-spacing: 0.05em;
+    width: 60%;
+    font-size: 22px;
     text-align: center;
     background-color: rgba(227, 209, 181, 0.7803921569);
-    padding: 10px 10px;
     color: black;
     font-weight: lighter;
     letter-spacing: 1px;
-  }
-  .main__description--about2 {
-    grid-area: p2;
-    margin-right: 50px;
-    font-size: 18px;
+    height: 300px;
+    padding: 70px 20px;
   }
   .main__title {
     font-family: "Cormorant", serif;
     font-weight: lighter;
-    font-size: 46px;
+    font-size: 40px;
     margin-bottom: 40px;
   }
   .main__description {
@@ -255,7 +257,7 @@
   }
   .main__skillsSection {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .main__skillsContentText {
     display: flex;
@@ -281,12 +283,14 @@
     background-color: rgba(144, 144, 144, 0.2784313725);
     padding: 0px 20px;
     padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .main__title--portfolio {
     font-weight: 900;
     text-shadow: 15px solid black;
     margin-bottom: 15px;
-    font-size: 46px;
+    font-size: 40px;
     padding-bottom: 10px;
   }
   .main__card {
@@ -296,8 +300,7 @@
   .main__allCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2px;
+    justify-content: space-evenly;
   }
   .main__img {
     margin: 20px 0;
@@ -310,7 +313,7 @@
     font-family: "Cormorant", serif;
     font-weight: lighter;
     margin-bottom: 10px;
-    font-size: 32px;
+    font-size: 26px;
     padding-left: 10px;
   }
   .maincardIcons {
@@ -325,14 +328,13 @@
     padding-left: 8px;
     width: 45px;
   }
-  .main__programingInfo {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    padding: 10px 10px;
-    margin: 15px 0;
-  }
   .main span {
     margin: 10px 0px;
+  }
+  .main__card--tech {
+    padding: 15px 10px;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .main__contactSection {
     display: flex;
@@ -340,7 +342,7 @@
     align-items: center;
   }
   .main__contactTitle {
-    font-size: 110px;
+    font-size: 80px;
     font-family: "Cormorant", serif;
     font-weight: lighter;
     text-align: center;
@@ -348,10 +350,10 @@
   .main__button {
     background-color: #fff;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     border: 1px solid black;
-    padding: 15px 100px;
-    margin-bottom: 30px;
+    padding: 20px 50px;
+    margin-bottom: 20px;
   }
   .main__button:hover {
     background-color: rgb(107, 107, 107);
@@ -365,13 +367,13 @@
   }
   .main .mediumHr {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-style: dotted none none;
     border-width: 5px;
   }
   .main .mediumHr--laptopView {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     border-style: dotted none none;
     border-width: 5px;
   }
@@ -387,7 +389,7 @@
 }
 .navbar__title {
   font-family: "Cormorant", serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 5px;
   text-align: center;
   color: white;
@@ -409,7 +411,7 @@
   }
   .navbar__title {
     font-family: "Cormorant", serif;
-    font-size: 30px;
+    font-size: 22px;
     color: white;
     padding-left: 80px;
     padding-bottom: 10px;
