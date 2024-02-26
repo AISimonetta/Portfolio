@@ -13,7 +13,8 @@ Embark on the journey through my very first project, crafted during my immersive
 ► Portfolio Project Preview:
 ---
 
-![Screenshot 2024-01-28 at 11 28 18](https://github.com/AISimonetta/Portfolio/assets/122782260/15e6f976-6e0a-418a-ab7f-5194c183191b)
+![Screenshot 2024-02-26 at 12 06 43](https://github.com/AISimonetta/Portfolio/assets/122782260/87bda315-a301-433a-9ddc-0ec0f6f0fec6)
+
 
 ► Project Structure:
 ---
