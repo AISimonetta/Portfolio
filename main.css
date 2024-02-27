@@ -109,7 +109,7 @@
   justify-content: center;
 }
 .main__profileImg {
-  width: 300px;
+  width: 250px;
   margin-bottom: 40px;
   align-self: center;
   margin-top: 30px;
@@ -122,6 +122,11 @@
   font-weight: lighter;
   font-style: italic;
   text-align: start;
+  background-color: rgba(227, 209, 181, 0.7803921569);
+  padding: 10px 10px;
+}
+.main__description--about1 {
+  background-color: rgba(227, 209, 181, 0.7803921569);
 }
 .main__skillsSection {
   display: none;

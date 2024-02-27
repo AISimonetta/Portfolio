@@ -20,7 +20,7 @@
   }
 
   &__profileImg {
-    width: 300px;
+    width: 250px;
     margin-bottom: 40px;
     align-self: center;
     margin-top: 30px;
@@ -34,6 +34,15 @@
     font-weight: lighter;
     font-style: italic;
     text-align: start;
+    background-color: #e3d1b5c7;
+    padding: 10px 10px;
+
+  }
+
+  &__description--about1{
+    background-color: #e3d1b5c7;
+
+
   }
 
   &__skillsSection {
